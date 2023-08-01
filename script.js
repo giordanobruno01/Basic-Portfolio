@@ -1,6 +1,6 @@
 function showContent1() {
   document.getElementById("content").innerHTML = "hello 1";
-}
+} 
 function showContent2() {
   document.getElementById("content").innerHTML = "hello 2";
 }
