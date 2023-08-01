@@ -16,3 +16,4 @@ function showContent5() {
 function showContent6() {
   document.getElementById("content").innerHTML = "hello 6";
 }
+ 
