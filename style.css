@@ -1,0 +1,32 @@
+#top {
+  background-color: black;
+  width: 100%;
+  height: 10vh;
+}
+#bottom {
+  width: 100%;
+  height: 10vh;
+  background-color: aqua;
+}
+#left {
+  display: inline;
+  background-color: red;
+  width: 20%;
+  height: 80vh;
+  float: left;
+}
+#middle {
+  display: inline-flex;
+  width: 60%;
+  height: 80vh;
+  background-color: blue;
+  float: none;
+}
+
+#right {
+  display: inline;
+  width: 20%;
+  height: 80vh;
+  background-color: yellow;
+  float: right;
+}
