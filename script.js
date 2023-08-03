@@ -2,7 +2,7 @@ function showContent1() {
   document.getElementById("content").innerHTML = "hello 1";
 } 
 function showContent2() {
-  document.getElementById("content").innerHTML = "hello 2";
+  document.getElementById("content").innerHTML = "hello 2"; 
 }
 function showContent3() {
   document.getElementById("content").innerHTML = "hello 3";
