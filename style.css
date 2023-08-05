@@ -2,6 +2,8 @@
   min-width: 700px; */
 /* background-image: linear-gradient(to b,rgba(24, 119, 119, 0.234),rgba(172, 176, 179, 0.839));
 } */
+
+
 #top {
   background-image: linear-gradient(
     to bottom,
@@ -192,25 +194,22 @@
   padding-top: 0px;
 }
 #instagramContent {
-  margin: 20px 20px 10px 20px;
   position: relative;
-  padding-bottom: 90%;
-  padding-top: 0px;
-  height: 30vw;
+  height: 35vw;
+}
+
+#instagramFrame {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 96%;
+  height: 75vh;
 }
 #contentGit {
     text-align: center;
     overflow-x: scroll;
     padding: 5px;
   }
-#instagramFrame {
-  position: absolute;
-  top: 2%;
-  left: 2%;
-  width: 96%;
-  height: 70vh;
-}
-
 iframe {
   position: absolute;
   top: 2%;
@@ -400,9 +399,8 @@ iframe {
     padding-top: 0px;
   }
   #instagramContent {
-    margin: 0px 20px 10px 20px;
     position: relative;
-    padding-bottom: 100%;
+    
   }
   #instagramFrame {
     position: absolute;
