@@ -1,8 +1,12 @@
 function showContent1() {
-  document.getElementById("content").innerHTML = `About me`;
+  document.getElementById(
+    "content"
+  ).innerHTML = `<div id= "contentCv">About me</div>`;
 }
-function showContent2() {
-  document.getElementById("content").innerHTML = `
+function showContent2() { 
+  document.getElementById(
+    "content"
+  ).innerHTML = `<div id= "contentCv">
 <p><h6>KEY SKILLS</h6> 
 •	Applications: Microsoft Office Suite (Word, Excel, PowerPoint, Outlook) 
 •	Programming Languages: Java, CSS, HTML5, JavaScript, Python, Spring Boot, API
@@ -56,17 +60,16 @@ Leaving Certificate
 •	Work directly with an Irish financial client
 •	Handling customer documents working across multiple products and processes, such as mortgage, finance and leasing and tax returns
 •	Deliver exceptional customer service by ensuring all our customer and legal documents are scanned, routed and stored in the most efficient and effective manner 
-</p>
+</p></div>
 `;
 }
 function showContent3() {
   document.getElementById(
     "content"
-  ).innerHTML = `<p>199 South Circular Road, Dublin 8.
+  ).innerHTML = `<div id= "contentCv">199 South Circular Road, Dublin 8.
 <a href="">giordanobrunotj@hotmail.com </a>
 		Mobile Number: +3530830893275
-
-</p>`;
+</div>`;
 }
 function showContent4() {
   document.getElementById(
@@ -76,12 +79,12 @@ function showContent4() {
 function showContent5() {
   document.getElementById(
     "content"
-  ).innerHTML = `<h1>My Calendar</h1><img src="http://ghchart.rshah.org/giordanobruno01" alt="Giordano's Github chart" />`;
+  ).innerHTML = `<div id= "contentGit"><h1>My Calendar</h1><img src="http://ghchart.rshah.org/giordanobruno01" alt="Giordano's Github chart" /></div>`;
 }
 function showContent6() {
   document.getElementById(
     "content"
-  ).innerHTML = `<div id="instagramContent"><iframe
+  ).innerHTML = `<div id="instagramContent"><iframe id="instagramFrame"
       src="https://widgets.sociablekit.com/instagram-feed/iframe/176044"
     ></iframe></div>`;
 }
