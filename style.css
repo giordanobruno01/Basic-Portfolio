@@ -112,7 +112,7 @@
   padding: 10px;
   overflow-y: scroll;
   max-height: 75vh;
-}
+} 
 
 #right {
   display: inline;
@@ -217,6 +217,9 @@ iframe {
   width: 96%;
   height: 95%;
 }
+ul{
+  padding-left: 1px;
+}
 
 /* for phones -________________________________________________________*/
 @media only screen and (max-width: 700px) {
@@ -224,7 +227,7 @@ iframe {
     display: block;
     width: 80%;
     height: 100%;
-    min-height: 500px;
+    min-height: 600px;
     background-color: white;
     float: right;
   }
@@ -235,7 +238,7 @@ iframe {
   #right {
     display: block;
     width: 20%;
-    height: 70vw;
+    height: 80vw;
     background-color: rgba(172, 255, 47, 0.316);
   }
   #right1 {
@@ -245,7 +248,7 @@ iframe {
       white
     );
     margin: 10px;
-    height: 29%;
+    height: 30%;
     background-color: white;
     text-align: center;
   }
@@ -266,7 +269,7 @@ iframe {
       white
     );
     margin: 10px;
-    height: 29%;
+    height: 30%;
     background-color: white;
     text-align: center;
   }
@@ -287,7 +290,7 @@ iframe {
       white
     );
     margin: 10px;
-    height: 29%;
+    height: 30%;
     background-color: white;
     text-align: center;
   }
@@ -296,7 +299,7 @@ iframe {
     display: block;
     background-color: rgba(255, 0, 0, 0.145);
     width: 20%;
-    height: 70vw;
+    height: 80vw;
   }
   #left1 {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.027), white);
@@ -306,7 +309,7 @@ iframe {
   background-repeat: no-repeat;
   background-position: top center; */
     margin: 10px;
-    height: 29%;
+    height: 30%;
     background-color: white;
   }
   #left1 > button {
@@ -323,7 +326,7 @@ iframe {
   #left2 {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.027), white);
     margin: 10px;
-    height: 29%;
+    height: 30%;
     background-color: white;
     text-align: center;
   }
@@ -341,7 +344,7 @@ iframe {
   #left3 {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.027), white);
     margin: 10px;
-    height: 29%;
+    height: 30%;
     background-color: white;
     text-align: center;
   }
@@ -380,8 +383,8 @@ iframe {
     text-align: center;
     top: 2%;
     left: 2%;
-    width: 75vw;
-    max-height: 79vh;
+    width: 73vw;
+    max-height: 67vh;
     overflow-y: scroll;
   }
   #contentGit {
@@ -397,6 +400,7 @@ iframe {
     position: relative;
     padding-bottom: 54%;
     padding-top: 0px;
+    max-height: 60vh;
   }
   #instagramContent {
     position: relative;
@@ -407,7 +411,7 @@ iframe {
     top: 2%;
     left: 2%;
     width: 96%;
-    height: 60vh;
+    height: 70vh;
   }
   iframe {
     position: absolute;
