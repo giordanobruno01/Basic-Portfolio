@@ -2,7 +2,36 @@
   min-width: 700px; */
 /* background-image: linear-gradient(to b,rgba(24, 119, 119, 0.234),rgba(172, 176, 179, 0.839));
 } */
+#initial {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(14, 233, 233, 0.234),
+    rgba(0, 204, 255, 0.27)
+  );
+  padding: 50px;
+  display: block;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
 
+  animation-name: example;
+  animation-duration: 10s;
+}
+@keyframes example {
+  0% {
+    background-color: pink;
+  }
+  25% {
+    background-color: rgba(247, 0, 255, 0.616);
+  }
+  50% {
+    background-color: rgb(0, 204, 255);
+  }
+  50% {
+    background-color: rgb(6, 243, 172);
+  }
+}
 
 #top {
   background-image: linear-gradient(
@@ -104,16 +133,6 @@
   bottom: 0; */
 }
 
-#content {
-  text-align: center;
-}
-#contentCv {
-  text-align: center;
-  padding: 10px;
-  overflow-y: scroll;
-  max-height: 75vh;
-} 
-
 #right {
   display: inline;
   width: 20%;
@@ -185,39 +204,29 @@
   text-decoration: underline;
   color: rgba(172, 255, 47, 0.316);
 }
-
-#youtubeContent {
-  background-color: rgb(0, 0, 0);
-  margin: 50px 20px 50px 20px;
-  position: relative;
-  padding-bottom: 54%;
-  padding-top: 0px;
-}
-#instagramContent {
-  position: relative;
-  height: 35vw;
+#content {
+  text-align: center;
 }
 
-#instagramFrame {
-  position: absolute;
-  top: 2%;
-  left: 2%;
-  width: 96%;
-  height: 75vh;
+#contentText {
+  text-align: center;
+  padding: 10px;
+  overflow-y: scroll;
+  max-height: 76vh;
 }
+
 #contentGit {
-    text-align: center;
-    overflow-x: scroll;
-    padding: 5px;
-  }
-iframe {
-  position: absolute;
-  top: 2%;
-  left: 2%;
-  width: 96%;
-  height: 95%;
+  text-align: center;
+  overflow-x: scroll;
+  padding: 5px;
 }
-ul{
+
+iframe {
+  margin-top: 3px;
+  width: 96%;
+  height: 79vh;
+}
+ul {
   padding-left: 1px;
 }
 
@@ -379,45 +388,23 @@ ul{
     height: 5vh;
     background-color: rgba(0, 255, 255, 0.213);
   }
-  #contentCv {
-    text-align: center;
-    top: 2%;
-    left: 2%;
-    width: 73vw;
-    max-height: 67vh;
-    overflow-y: scroll;
-  }
-  #contentGit {
-    text-align: center;
-    width:75vw;
-    max-height: 79vh;
-    overflow-x: scroll;
-    padding: 5px;
-  }
-  #youtubeContent {
-    background-color: rgb(0, 0, 0);
-    margin: 50px 20px 50px 20px;
-    position: relative;
-    padding-bottom: 54%;
-    padding-top: 0px;
-    max-height: 60vh;
-  }
-  #instagramContent {
-    position: relative;
-    
-  }
-  #instagramFrame {
-    position: absolute;
-    top: 2%;
-    left: 2%;
-    width: 96%;
-    height: 70vh;
-  }
-  iframe {
-    position: absolute;
-    top: 2%;
-    left: 2%;
-    width: 96%;
-    height: 96%;
-  }
+
+#contentText {
+  text-align: center;
+  padding: 10px;
+  overflow-y: scroll;
+  max-height: 71vh;
+}
+
+#contentGit {
+  text-align: center;
+  overflow-x: scroll;
+  padding: 5px;
+}
+
+iframe {
+  margin-top: 3px;
+  width: 96%;
+  height: 73vh;
+}
 }
