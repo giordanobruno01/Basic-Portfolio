@@ -1,10 +1,10 @@
 function showContent1() {
   document.getElementById(
-    "content"
+    "middle"
   ).innerHTML = `<div id= "contentText">About me</div>`;
 }
 function showContent2() {
-  document.getElementById("content").innerHTML = `<div id= "contentText">
+  document.getElementById("middle").innerHTML = `<div id= "contentText">
 <h4>KEY SKILLS</h4> 
 <ul style="list-style-type:"none">
 <li>Applications: Microsoft Office Suite (Word, Excel, PowerPoint, Outlook)</li> 
@@ -85,7 +85,7 @@ function showContent2() {
 }
 function showContent3() {
   document.getElementById(
-    "content"
+    "middle"
   ).innerHTML = `<div id= "contentText" <address>199 South Circular Road, Dublin 8</address>
   <a href="mailto:giordanobrunotj@hotmail.com" target="_blank">giordanobrunotj@hotmail.com</a>
 <a href="tel:+3530830893275">+3530830893275</a>
@@ -93,20 +93,18 @@ function showContent3() {
 }
 function showContent4() {
   document.getElementById(
-    "content"
-  ).innerHTML = `<iframe src='https://widgets.sociablekit.com/youtube-channel-videos/iframe/176585' frameborder='0' width='100%' height='1000'></iframe>`;
-  // document.getElementById(
-  //   "content"
-  // ).innerHTML = `<div id="youtubeContent"><iframe src="https://www.youtube.com/embed/nkpma_EiUlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`;
+    "middle"
+  ).innerHTML = `<iframe src='https://widgets.sociablekit.com/youtube-channel-videos/iframe/176585' ></iframe>`;
+ 
 }
 function showContent5() {
   document.getElementById(
-    "content"
+    "middle"
   ).innerHTML = `<div id= "contentGit"><h1>My Calendar</h1><img src="http://ghchart.rshah.org/giordanobruno01" alt="Giordano's Github chart" /></div>`;
 }
 function showContent6() {
   document.getElementById(
-    "content"
-  ).innerHTML = `<iframe src='https://widgets.sociablekit.com/instagram-feed/iframe/176044' frameborder='0' width='100%' height='1000'></iframe>`;
+    "middle"
+  ).innerHTML = `<iframe src='https://widgets.sociablekit.com/instagram-feed/iframe/176044'></iframe>`;
 }
 
