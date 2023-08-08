@@ -1,7 +1,10 @@
-/* body {
-  min-width: 700px; */
-/* background-image: linear-gradient(to b,rgba(24, 119, 119, 0.234),rgba(172, 176, 179, 0.839));
-} */
+/* main{
+  height: 80vh
+}  */
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+:root {
+  --font-big: "Lilita One", cursive;
+}
 
 #initial {
   background-image: linear-gradient(
@@ -13,8 +16,6 @@
   display: block;
   width: 90%;
   margin: 25vh auto 25vh auto;
-  
-  
 
   animation-name: example;
   animation-duration: 10s;
@@ -44,8 +45,9 @@
   height: 9vh;
   margin-bottom: 3px;
   text-align: center;
-  font-size: xx-large;
   box-shadow: 0px 0px 3px 3px rgba(181, 153, 158, 0.19);
+  font-family: var(--font-big);
+  font-size: 7vh;
 }
 #bottom {
   margin-top: 3px;
@@ -74,7 +76,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center; */
-  margin: 10px;
+  margin: 5%;
   height: 31%;
   background-color: white;
 }
@@ -91,7 +93,7 @@
 
 #left2 {
   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.027), white);
-  margin: 10px;
+  margin: 5%;
   height: 31%;
   background-color: white;
   text-align: center;
@@ -109,7 +111,7 @@
 
 #left3 {
   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.027), white);
-  margin: 10px;
+  margin: 5%;
   height: 31%;
   background-color: white;
   text-align: center;
@@ -145,7 +147,7 @@
     rgba(172, 255, 47, 0.129),
     white
   );
-  margin: 10px;
+  margin: 5%;
   height: 31%;
   background-color: white;
   text-align: center;
@@ -166,7 +168,7 @@
     rgba(172, 255, 47, 0.129),
     white
   );
-  margin: 10px;
+  margin: 5%;
   height: 31%;
   background-color: white;
   text-align: center;
@@ -187,7 +189,7 @@
     rgba(172, 255, 47, 0.129),
     white
   );
-  margin: 10px;
+  margin: 5% 5% 5% 5%;
   height: 31%;
   background-color: white;
   text-align: center;
@@ -207,7 +209,7 @@
   text-align: center;
   padding: 10px;
   overflow-y: scroll;
-  max-height: 76vh;
+  max-height: 79vh;
 }
 
 #contentGit {
@@ -228,11 +230,10 @@ ul {
 }
 
 .mySlides {
-  display:none;
+  display: none;
 }
 img {
   vertical-align: middle;
-  
 }
 
 .dot {
@@ -253,6 +254,7 @@ img {
 
 /* for phones -________________________________________________________*/
 @media only screen and (max-width: 700px) {
+  
   #middle {
     display: block;
     width: 80%;
@@ -330,7 +332,6 @@ img {
     background-color: rgba(255, 0, 0, 0.145);
     width: 20%;
     height: 42vh;
-    
   }
   #left1 {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.027), white);
@@ -399,7 +400,8 @@ img {
     height: 5vh;
     margin-bottom: 3px;
     text-align: center;
-    font-size: xx-large;
+    font-family: var(--font-big);
+    font-size: 10vw;
   }
 
   #contentText {
