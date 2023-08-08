@@ -1,7 +1,16 @@
 function showContent1() {
-  document.getElementById(
-    "middle"
-  ).innerHTML = `<div id= "contentText">About me</div>`;
+  document.getElementById("middle").innerHTML = `<div id= "contentText" >
+  <h1>There is no much about me</h1>
+  <h3>Here is some loren</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum pariatur similique excepturi nobis quia dolor sint dignissimos perferendis sit fugit aut, laborum iste reiciendis sunt id eveniet repellendus non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum pariatur similique excepturi nobis quia dolor sint dignissimos perferendis sit fugit aut, laborum iste reiciendis sunt id eveniet repellendus non!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum pariatur similique excepturi nobis quia dolor sint dignissimos perferendis sit fugit aut, laborum iste reiciendis sunt id eveniet repellendus non!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum pariatur similique excepturi nobis quia dolor sint dignissimos perferendis sit fugit aut, laborum iste reiciendis sunt id eveniet repellendus non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum pariatur similique excepturi nobis quia dolor sint dignissimos perferendis sit fugit aut, laborum iste reiciendis sunt id eveniet repellendus non!</p>
+  
+  <h1>The content is not that relevant</h1>
+  <h3>Not be the best writer, but a good programmer </h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum pariatur similique excepturi nobis quia dolor sint dignissimos perferendis sit fugit aut, laborum iste reiciendis sunt id eveniet repellendus non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum pariatur similique excepturi nobis quia dolor sint dignissimos perferendis sit fugit aut, laborum iste reiciendis sunt id eveniet repellendus non!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum pariatur similique excepturi nobis quia dolor sint dignissimos perferendis sit fugit aut, laborum iste reiciendis sunt id eveniet repellendus non!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum pariatur similique excepturi nobis quia dolor sint dignissimos perferendis sit fugit aut, laborum iste reiciendis sunt id eveniet repellendus non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum pariatur similique excepturi nobis quia dolor sint dignissimos perferendis sit fugit aut, laborum iste reiciendis sunt id eveniet repellendus non!</p>
+  <h3>Check the other contents</h3>
+  </div>`;
 }
 function showContent2() {
   document.getElementById("middle").innerHTML = `<div id= "contentText">
@@ -84,18 +93,76 @@ function showContent2() {
 `;
 }
 function showContent3() {
-  document.getElementById(
-    "middle"
-  ).innerHTML = `<div id= "contentText" <address>199 South Circular Road, Dublin 8</address>
-  <a href="mailto:giordanobrunotj@hotmail.com" target="_blank">giordanobrunotj@hotmail.com</a>
-<a href="tel:+3530830893275">+3530830893275</a>
-</div>`;
+  document.getElementById("middle").innerHTML = ` 
+  <h3 style="margin-top:150px">Choose the contact method by clicking the dots</h3>
+  <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+  <div class="slideshow-container">
+
+            <div class="mySlides">
+                <a href="https://www.linkedin.com/in/giordano-bruno-42a9035a/" target="_blank"><img src="media/icons/linkedin_icon.png"></a>
+            </div>
+            <div class="mySlides ">
+                <a href="https://github.com/giordanobruno01" target="_blank"><img src="media/icons/git_icon.png"></a>
+            </div>
+            <div class="mySlides">
+                <a href="mailto:giordanobrunotj@hotmail.com" target="_blank"><img src="media/icons/outlook_icon.png"></a>
+            </div>
+            <div class="mySlides">
+                <a href="tel:+3530830893275" target="_blank"><img src="media/icons/phone_icon.png"></a>
+            </div>
+            <div class="mySlides ">
+                <a href="https://www.instagram.com/giordanobruno01/" target="_blank"><img src="media/icons/instagram_icon.png"></a>
+            </div>
+            <div class="mySlides">
+                <a href="https://www.youtube.com/channel/UCIS9Ju9ve0KDRXGsm_osM8Q" target="_blank"><img src="media/icons/youtube_icon.png"></a>
+            </div>
+            
+        </div>
+        <br>
+        `;
+  let slideIndex = 1;
+  showSlides(slideIndex);
 }
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  // let slides1 = document.getElementsByClassName("mySlides1");
+  // slides1.style.display = "none";
+
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
 function showContent4() {
   document.getElementById(
     "middle"
   ).innerHTML = `<iframe src='https://widgets.sociablekit.com/youtube-channel-videos/iframe/176585' ></iframe>`;
- 
 }
 function showContent5() {
   document.getElementById(
@@ -107,4 +174,3 @@ function showContent6() {
     "middle"
   ).innerHTML = `<iframe src='https://widgets.sociablekit.com/instagram-feed/iframe/176044'></iframe>`;
 }
-
