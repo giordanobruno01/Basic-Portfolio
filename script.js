@@ -94,7 +94,7 @@ function showContent2() {
 }
 function showContent3() {
   document.getElementById("middle").innerHTML = ` 
-  <h3 style="margin-top:10vh">Choose the contact method by clicking the dots</h3>
+  <h3 style="margin-top:3vh">Choose the contact method by clicking the dots</h3>
   <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>

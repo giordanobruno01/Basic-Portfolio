@@ -60,6 +60,9 @@
     rgba(23, 165, 247, 0.27)
   );
   box-shadow: 0px 0px 3px 3px rgba(153, 178, 181, 0.19);
+  font-family: var(--font-big);
+  font-size: 7vh;
+  text-align: center;
 }
 #left {
   display: inline;
@@ -147,7 +150,7 @@
     rgba(172, 255, 47, 0.129),
     white
   );
-  margin:4%;
+  margin: 4%;
   height: 31%;
   background-color: white;
   text-align: center;
@@ -189,7 +192,7 @@
     rgba(172, 255, 47, 0.129),
     white
   );
-  margin: 4% 4% 4% 4% ;
+  margin: 4% 4% 4% 4%;
   height: 31%;
   background-color: white;
   text-align: center;
@@ -254,7 +257,6 @@ img {
 
 /* for phones -________________________________________________________*/
 @media only screen and (max-width: 700px) {
-  
   #middle {
     display: block;
     width: 80%;
@@ -388,11 +390,14 @@ img {
     color: rgb(255, 240, 240);
   }
   #bottom {
-    display: inline-flex;
+    display: inline-block;
     width: 100%;
     background-color: rgba(0, 255, 255, 0.213);
     margin-top: 3px;
     height: 5vh;
+    text-align: center;
+    font-family: var(--font-big);
+    font-size: 5vh;
   }
   #top {
     background-color: rgba(0, 0, 0, 0.106);
@@ -401,7 +406,7 @@ img {
     margin-bottom: 3px;
     text-align: center;
     font-family: var(--font-big);
-    font-size: 10vw;
+    font-size: 5vh;
   }
 
   #contentText {
